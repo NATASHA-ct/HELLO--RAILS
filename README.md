@@ -1,24 +1,7 @@
-# README
+# HELLO RAILS
+This is a simple rails project to practice initalizing a rails app and deploying it on rails server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Create a new app called 'hellorails'.
+- Initialize your project with Git.
+- Make sure that your project has Postgres database set up.
+- Run rails server and visit http://localhost:3000/ in your browser!
