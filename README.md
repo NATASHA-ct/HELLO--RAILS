@@ -64,6 +64,7 @@ If you installed git you can clone the code to your machine, or download a ZIP o
   - rails db:create
   - rails generate controller **foldername filename*8
   - rails generate model
+  ```
 
 ### Quick view of the project
 <img width="934" alt="Screenshot 2022-10-26 151428" src="https://user-images.githubusercontent.com/106079814/198031531-bf155fe3-f2f3-43b9-b4fb-249fbc66dd18.png">
@@ -89,9 +90,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+-Hat tip to all documentations used
+-Inspiration 
 
 ## 📝 License
 
