@@ -1,6 +1,10 @@
-require_relative "boot"
+# frozen_string_literal: true
 
-require "rails/all"
+# top level doc comment error solved
+
+require_relative 'boot'
+
+require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

@@ -1,3 +1,7 @@
+# frozen_string_literal: true
+
+# top level doc comment error solved
+
 class CreateStudents < ActiveRecord::Migration[7.0]
   def change
     create_table :students do |t|

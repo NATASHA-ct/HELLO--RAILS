@@ -1,5 +1,7 @@
 <h1>WELCOME TO RAILS</h1>
 
+<%= link_to 'ADD A NEW STUDENT', new_student_path %>
+
 <h2>Microverse Students List</h2>
 
 <table>
@@ -10,6 +12,7 @@
       <th>email</th>
       <th>address</th>
       <th>program</th>
+      <th colspan="3">Actions</th>
     </tr>
  </thead>
  <tbody>
@@ -20,6 +23,9 @@
       <td><%= student.email%></td>
       <td><%= student.address%></td>
       <td><%= student.program%></td>
+      </td>
+      <td><%= link_to 'View details',student %></td>
+      <td><%= link_to 'Edit details', edit_student_path(student) %></td>
     </tr>
   <%end%>
  </tbody>

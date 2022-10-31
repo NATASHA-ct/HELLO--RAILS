@@ -1,14 +1,7 @@
-<h2>NEW STUDENT</h2>
+<h2>EDIT STUDENT INFORMATION</h2>
 
 <!--form block -->
 <%= form_with model: @student do |form| %>
-<!-- displaying error messages-->
-  <%if @student.errors.any?%>
-    <%@student.errors.full_messages.each do |message| %>
-    <p><%= message %></p>
-  <% end %>
-  <% end %>
-
   <div>
     <%= form.label :first_name %>
     <%= form.text_field :first_name %>
