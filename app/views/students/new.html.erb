@@ -1,0 +1,43 @@
+<h2>NEW STUDENT</h2>
+
+<!--form block -->
+<%= form_with model: @student do |form| %>
+<!-- displaying error messages-->
+  <%if @student.errors.any?%>
+    <%@student.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+  <% end %>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+  <br>
+  <div>
+    <%= form.label :program %>
+    <%= form.text_field :program %>
+  </div>
+
+  <br>
+  <div>
+    <%= form.submit %>
+  </div>
+<%end%>
+
+:

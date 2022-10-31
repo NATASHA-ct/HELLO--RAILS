@@ -1,0 +1,26 @@
+<h1>WELCOME TO RAILS</h1>
+
+<h2>Microverse Students List</h2>
+
+<table>
+ <thead>
+   <tr>
+      <th>first_name</th> 
+      <th>last_name</th>
+      <th>email</th>
+      <th>address</th>
+      <th>program</th>
+    </tr>
+ </thead>
+ <tbody>
+  <% @students.each do |student|%>
+    <tr>
+      <td><%= student.first_name%></td>
+      <td><%= student.last_name%></td>
+      <td><%= student.email%></td>
+      <td><%= student.address%></td>
+      <td><%= student.program%></td>
+    </tr>
+  <%end%>
+ </tbody>
+</table>
