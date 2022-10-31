@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class StudentsController < ApplicationController
+  before_action :set_student, only:%i[show edit update destroy]
   # action for displaying all the students in the list
   def index
     @students = Student.all
@@ -30,17 +31,36 @@ class StudentsController < ApplicationController
 
   # action to display one student
   def show
-    @student = Student.find(params[:id])
+    
   end
 
   def edit 
-    @student = Student.find(params[:id])
+    
+  end
+
+  def update
+    if @student.update(student_params)
+      redirect_to student_path(@student)
+    else 
+      render :edit
+    end
+  end
+
+  def destroy 
+    @student.destroy
+    redirect_to students_path
   end
 
   private
 
   # creating a seperate action for params using strong parameters
   def student_params
-    params.require(:student).permit(first_name, :last_name, :email, :address, :program)
+    params.require(:student).permit(:first_name, :last_name, :email, :address, :program)
+  end
+
+  #used this method to refactor my code , instead of the find in every method using the callback above
+  def set_student
+  #this is to find the student first
+    @student = Student.find(params[:id])
   end
 end

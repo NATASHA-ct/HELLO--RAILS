@@ -7,3 +7,6 @@
 <p><strong>Program: </strong><%= @student.program %></p>
 
 <%= link_to 'Back to Homepage', students_path %> | <%= link_to 'Edit details', edit_student_path(@student) %>
+
+<!--DELETING IN RAILS 7-->
+<%= button_to 'Delete student', @student, method: :delete , form: {data: {turbo_confirm: 'Are you sure you want to delete?'}} %>
